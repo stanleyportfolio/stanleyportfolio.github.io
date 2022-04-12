@@ -1,1 +1,212 @@
-*{color:red;}
+@import 'npm:normalize.css/normalize.css';
+body #ruler{opacity:0;pointer-events:none;z-index:999; width:2px;height:100vh;background-color:red;position:fixed;top:0;bottom:0;left:auto;right:auto;}
+
+html{
+    position:relative;
+    overflow:hidden;
+    width:100vw;height:100vh;
+    font-family:sans-serif;font-size:10px;
+}
+body{
+    font-size:1.6rem;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    width:100vw;height:100vh;
+    display:flex;justify-content:center;align-items:center;
+}
+
+a{
+    display:inline-block;
+    color:rgba(0,0,110,1);
+    border-bottom:2px dashed rgba(0, 0, 110, 0.5);
+    text-decoration:none;
+}
+
+#vision-word{
+    position:relative;
+    pointer-events:none;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    top:-90px;
+}
+
+#whatis, #whatisQ, 
+#bokeh-wrap, #hidedistraction,
+.navi-buttons, #greatcontemplation,
+#explain-wrap, #experience, #isimportant
+{
+    position:absolute;
+    transition:all 0.5s ease;
+    pointer-events:none;
+    opacity:0;
+}
+
+#whatis{margin-left:-110px;}
+#whatisQ{margin-left:65px;top:0;}
+
+[data-page="1"]{
+    #whatis, #whatisQ{opacity:1;}
+}
+
+#bokeh-wrap{left:-50vw;z-index:-1;width:100%;height:100%;}
+#hidedistraction{top:20px;}
+#showmeaningful{font-weight:bold;transition:all 1s ease;transition-delay: 2000ms;opacity:0;}
+[data-page="2"]{
+    #hidedistraction,
+    #showmeaningful
+    {opacity:1;pointer-events:all;}
+    .navi-buttons{transition-delay: 2000ms;}
+}
+
+#greatcontemplation{top:20px;}
+[data-page="4"]{
+    *{outline:2px solid rgba(255,0,0,0.2);}
+
+    #explain-wrap,#greatcontemplation
+    {opacity:1;}
+
+    #greatcontemplation{
+        pointer-events:all;
+        outline:none;
+        *{outline:none;}
+    }
+
+    #explain-wrap{
+        width:100%;height:100%;
+        color:rgba(177, 202, 255,0.5);
+        text-align:left;
+
+        *{outline:none;margin:0;}
+    }
+
+    #explain-button{
+        position:absolute;
+        bottom:115px;
+        left:30px;
+    }
+
+    #explain-bokeh-ruler1,#explain-bokeh-ruler2{
+        width:55px;height:25px;
+        outline:2px solid rgba(255,0,0,0.1);
+        position:absolute;
+        margin:auto;
+        transform:skew(35deg);
+        z-index:-1;
+        text-align:center;
+        padding:5px;
+
+        h6{transform:skew(-35deg);}
+    }
+    #explain-bokeh-ruler1{
+        left:35px;top:80px;
+    }
+    #explain-bokeh-ruler2{
+        right:35px;bottom:120px;
+    }
+
+    #explain-responsive{
+        position:absolute;
+        right:30px;top:30px;
+        text-align:right;
+    }
+}
+
+#experience{top:20px;}
+[data-page="3"]{
+    #experience{opacity:1;}
+}
+
+#isimportant{top:20px;}
+[data-page="5"]
+{
+    #explain-wrap *{display:none;}
+    #isimportant{opacity:1;pointer-events:all;}
+    #navi-right{
+        opacity:0;
+        pointer-events:none;
+        *{pointer-events:none;}
+    }
+}
+
+.navi-buttons{
+    display:flex;
+    width:60px;height:60px;
+    pointer-events:none;
+    opacity:0;
+    bottom:40px;
+    padding:5px;
+}
+#navi-left{
+    left:30px;
+    .navi-buttons-shape{
+        box-shadow:0px 2px 3px rgba(0,0,0,0.15);
+    }
+}
+#navi-right{
+    right:30px;
+    .navi-buttons-shape{
+        box-shadow:1px 2px 3px rgba(0,0,0,0.15);
+    }
+}
+[data-page="2"], [data-page="3"],
+[data-page="4"], [data-page="5"]
+{
+    .navi-buttons{
+        pointer-events:all;
+        opacity:1;
+    }
+
+    .navi-buttons-shape{
+        background-color:rgb(250, 250, 250);
+        border-radius:100%;
+        width:100%;height:100%;
+    }
+}
+
+[data-page="3"],[data-page="4"]
+,[data-page="5"]
+{
+    #bokeh-wrap{opacity:1;}
+    #bokeh-wrap{left:0;}
+}
+
+//Bokeh
+.bokeh {
+    --size: 1vw;
+    width: var(--size);
+    height: var(--size);
+    background-color: rgb(255, 104, 104);
+    border-radius: 100%;
+    position: absolute;
+    top: -5vh;
+    filter: blur(1px);
+
+    &:nth-child(4n) {
+        filter: blur(2px);
+    } 
+  }
+  
+@keyframes windblow {
+    0% {
+        transform: translate3d(-30vw, 10vh, 0);
+    }
+    100% {
+        transform: translate3d(var(--left-end), 110vh, 0);
+    }
+}
+
+@for $i from 1 through 30 {
+    .bokeh:nth-child(#{$i}) {
+        --size: #{random(5) * 0.25}vw;
+        --left-ini: #{random(20) + 10}vw;
+        --left-end: #{random(30) + 90}vw;
+        left: #{random(30)}vw;
+        animation: windblow #{6 + random(10)}s linear infinite;
+        animation-delay: -#{random(10)}s;
+    }
+}
+
+  
