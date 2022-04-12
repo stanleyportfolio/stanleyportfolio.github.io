@@ -1,0 +1,2 @@
+document.querySelector("body").addEventListener("click",(function(e){let t=e.target;1==t.dataset.page&&(t.dataset.page=parseInt(t.dataset.page)+1)})),document.querySelector("#navi-left").addEventListener("click",(function(e){let t=document.querySelector("body");t.dataset.page=parseInt(t.dataset.page)-1})),document.querySelector("#navi-right").addEventListener("click",(function(e){let t=document.querySelector("body");t.dataset.page=parseInt(t.dataset.page)+1}));
+//# sourceMappingURL=index.5afc5354.js.map
