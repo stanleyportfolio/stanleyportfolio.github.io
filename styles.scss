@@ -187,7 +187,7 @@ a{
     width:60px;height:60px;
     pointer-events:none;
     opacity:0;
-    bottom:40px;
+    bottom:65px;
     padding:5px;
     cursor:pointer;
 
@@ -220,7 +220,6 @@ a{
 [data-page="2"], [data-page="3"],
 [data-page="4"], [data-page="5"]
 {
-    #backgroundgradient{opacity:1;}
     .navi-buttons{
         pointer-events:all;
         opacity:1;
@@ -230,6 +229,7 @@ a{
 [data-page="3"],[data-page="4"]
 ,[data-page="5"]
 {
+    #backgroundgradient{opacity:1;}
     #bokeh-wrap{opacity:1;}
     #bokeh-wrap{left:0;}
 }
