@@ -14,6 +14,8 @@ body{
     overflow:hidden;
     width:100vw;height:100vh;
     display:flex;justify-content:center;align-items:center;
+    background: rgb(245,245,245);
+    background: radial-gradient(circle, rgba(255,255,255,1) 10%, rgba(230,230,230,1) 70%);
 }
 
 a{
@@ -82,7 +84,7 @@ a{
 #greatcontemplation{top:30px;}
 #explain-wrap{
     width:100%;height:100%;
-    color:rgba(177, 202, 255,0.5);
+    color:rgba(146, 169, 218, 0.4);
     text-align:left;
     *{margin:0;}
 }
@@ -179,10 +181,10 @@ a{
         display:flex;
         align-items:center;
         justify-content:center;
-        color:rgba(255,0,0,0.2);
+        color:rgba(255,0,0,0.3);
         font-size:2.5rem;
         font-weight:bold;
-        background-color:rgba(0, 0, 0, 0.02);
+        background-color:rgba(255, 100, 100, 0.07);
         border-radius:100%;
         width:100%;height:100%;
     }
