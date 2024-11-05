@@ -201,11 +201,12 @@ html {
 
 body {
   text-align: center;
+  background: radial-gradient(circle, #fff 20%, #b4b4b4 100%);
   width: 100vw;
   height: 100vh;
   font-size: 1.6rem;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 a {
@@ -213,6 +214,25 @@ a {
   border-bottom: 2px dashed #00006e80;
   text-decoration: none;
   display: inline-block;
+}
+
+.descript-wrapper {
+  justify-content: center;
+  height: auto;
+  padding: 20px;
+  display: flex;
+}
+
+.descript-container {
+  color: #555;
+}
+
+@media (width >= 768px) {
+  .descript-container {
+    width: 70vw;
+    padding-top: 50px;
+    font-size: 20px;
+  }
 }
 
 .list-wrapper {
@@ -224,12 +244,22 @@ a {
 }
 
 .list-container {
-  grid-template-rows: auto auto 1fr auto;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: auto auto 150px auto;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   gap: 10px;
-  width: 80%;
+  width: 90vw;
   display: grid;
   position: relative;
+}
+
+@media (width >= 768px) {
+  .list-container {
+    grid-template-rows: auto auto 150px auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 70vw;
+    padding: 30px;
+  }
 }
 
 .list-close {
@@ -290,6 +320,16 @@ a {
   padding: 10px 25px;
 }
 
+@media (width <= 768px) {
+  .item-wrapper.selected .item-description {
+    font-size: 12px;
+  }
+
+  .item-wrapper.selected .item-description h2 {
+    font-size: 20px;
+  }
+}
+
 .item-wrapper.selected ~ .list-close {
   color: #bcf7ff;
   z-index: 100;
@@ -316,12 +356,17 @@ a {
   overflow: hidden;
 }
 
+.item-description h2 {
+  padding-bottom: 5px;
+}
+
 .item-wrapper {
   border-radius: 15px;
   max-width: 500px;
   height: 100%;
   position: relative;
   overflow: hidden;
+  box-shadow: 1px 2px 6px #00000059;
 }
 
 .item-container {
@@ -331,6 +376,7 @@ a {
 }
 
 .item-image-wrapper {
+  height: 100%;
   display: flex;
 }
 
@@ -338,10 +384,5 @@ a {
   object-fit: cover;
   object-position: center center;
   width: 100%;
-}
-
-.descript-wrapper {
-  height: auto;
-  padding: 10px;
 }
 /*# sourceMappingURL=work.b51c5352.css.map */
