@@ -269,5 +269,18 @@ a{
         animation-delay: -#{random(10)}s;
     }
 }
+ 
+.justshowmewhatudo{
+    position:fixed;
+    bottom:0;
+    font-size:13px;
+    opacity:0.3;
+    padding: 30px;
+}
 
-  
+body[data-page="5"] {
+    .justshowmewhatudo{
+        opacity:1;
+        font-weight:bold;
+    }
+}

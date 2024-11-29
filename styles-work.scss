@@ -16,6 +16,9 @@ body{
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 20%, rgba(180, 180, 180, 1) 100%);
     overflow-x:hidden;
 }
+body.backend-switch{
+    background: radial-gradient(circle, rgba(180, 180, 180, 1) 20%, rgba(255, 255, 255, 1) 100%);
+}
 
 a{
     display:inline-block;
@@ -84,6 +87,7 @@ a{
         .item-image-wrapper{
             flex-grow:1;
             overflow:hidden;
+            max-height:40%;
 
             @media (min-width: 768px){
                 height:100%;
@@ -104,7 +108,7 @@ a{
 
             @media (max-width: 768px){
                 font-size:12px;
-                h2{font-size:20px;}
+                h2{font-size:14px;}
             }
         }
 
@@ -156,4 +160,79 @@ a{
     width:100%;
     object-fit: cover;
     object-position: center center;
+}
+
+.item-backend{
+    height:0;overflow:hidden;
+    transition: height 0.5s ease-in-out;
+}
+.item-container:not(.item-backend){
+    transition: height 0.5s ease-in-out;
+}
+
+.backend-switch{
+    .item-container:not(.item-backend){
+        height:0;overflow:hidden;
+        transition: height 0.5s ease-in-out;
+    }
+
+    .item-backend{
+        height:100%;
+        transition: height 0.5s ease-in-out;
+    }
+}
+
+.list-switch{
+    position:fixed;
+    bottom:35px;right:-40px;
+    transform: translate(-50%, -50%);
+    z-index:100;
+    background: linear-gradient(45deg, #131313, #494949);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding:10px 25px 10px 15px;
+    width:auto;
+    cursor:pointer;
+    border-radius: 15px;
+    transition:all 0.3s ease;
+
+    div{
+        transform: rotate(180deg);
+        transform-origin: center;
+        transition:transform 0.3s ease;
+        color:rgb(216, 216, 216);
+    }
+
+    @media (min-width: 768px) {
+        right:-60px;
+        padding-right:40px;
+        bottom:40vh;
+        font-size:30px;
+    }
+}
+
+.backend-switch .list-switch{
+    background: linear-gradient(45deg, #e9e9e9, #ffffff);
+    transition:all 0.3s ease;
+    transform-origin: center;
+
+    div{
+        transform: rotate(360deg);
+        transition: transform 0.3s ease;
+        color:rgb(0, 0, 0);
+    }
+}
+
+.selected ~.list-switch{
+    padding:10px 13px;
+    right:0px;
+    transition:all 0.3s ease;
+
+    @media (min-width: 768px) {
+        padding:11px 17px;
+        right:-305px;left:auto;
+        margin-left:50%;margin-right:50%;
+        box-sizing: border-box;
+        width:60px;
+        bottom:40vh;
+    }
 }

@@ -12,6 +12,10 @@ document.querySelector('#list-close').addEventListener('click', function(e){
     itemWrappers.forEach(item=>{item.classList.remove('selected')})
 });
 
+document.querySelector('#list-switch').addEventListener('click', function(e){
+    document.body.classList.toggle('backend-switch')
+});
+
 document.querySelector('#list-lightbox').addEventListener('click', function(e){
     itemWrappers.forEach(item=>{item.classList.remove('selected')})
 });
