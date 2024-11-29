@@ -444,7 +444,8 @@ a {
   height: 20px;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 10px 25px 10px 15px;
+  padding: 7px 25px 10px 15px;
+  font-size: 18px;
   transition: all .3s;
   position: fixed;
   top: 36vw;
