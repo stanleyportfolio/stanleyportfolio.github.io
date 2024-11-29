@@ -438,6 +438,7 @@ a {
 
 .list-switch {
   cursor: pointer;
+  z-index: 9;
   background: linear-gradient(45deg, #131313, #494949);
   border-radius: 15px;
   width: auto;
