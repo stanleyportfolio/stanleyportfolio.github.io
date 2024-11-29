@@ -5,7 +5,7 @@ html{
     position:relative;
     overflow:hidden;
     width:100vw;height:100vh;
-    font-family:sans-serif;font-size:10px;
+    font-family:arial;font-size:10px;
 }
 body{
     font-size:1.6rem;
@@ -38,6 +38,7 @@ a{
     color:#555;
     @media (min-width: 768px){
         width:70vw;
+        max-width:800px;
         font-size:20px;
         padding-top:50px;
     }
@@ -105,6 +106,16 @@ a{
             text-align: left;
             flex-shrink:1;
             height:inherit;
+            position:relative;
+            font-size:inherit;
+            
+            h2{
+                font-size:20px;
+                margin:0;padding:0 0 5px 0;
+                width:auto;
+                color:black;
+                background-color:inherit;
+            }
 
             @media (max-width: 768px){
                 font-size:12px;
@@ -135,9 +146,23 @@ a{
 }
 .item-description{
     overflow:hidden;
-    height:0;
+    position:absolute;
+    top:0;left:0;
+    font-size:0;
 
-    h2{padding-bottom:5px;}
+    h2{
+        color:rgb(223, 223, 223);
+        z-index:1;
+        font-size:12px;
+        max-width:100%;
+        margin:5px;
+        box-sizing: border-box;
+        background-color:rgba(0,0,0,0.6);
+        border-radius: 10px;
+        position: relative;
+        padding:4px 8px;
+        text-align:left;
+    }
 }
 .item-wrapper{
     position:relative;
@@ -184,16 +209,20 @@ a{
 
 .list-switch{
     position:fixed;
-    bottom:35px;right:-40px;
+    top:36vw;bottom:0;
+    margin-top:auto;margin-bottom:auto;
+    height:20px;
+    right:-40px;
     transform: translate(-50%, -50%);
-    z-index:100;
     background: linear-gradient(45deg, #131313, #494949);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    padding:10px 25px 10px 15px;
+    padding:7px 25px 10px 15px;
     width:auto;
     cursor:pointer;
     border-radius: 15px;
     transition:all 0.3s ease;
+    font-size:18px;
+    z-index:9;
 
     div{
         transform: rotate(180deg);
@@ -203,10 +232,12 @@ a{
     }
 
     @media (min-width: 768px) {
-        right:-60px;
-        padding-right:40px;
-        bottom:40vh;
-        font-size:30px;
+        height:60px;
+        right:-60px;left:auto;
+        padding: 0 40px 0 15;
+        font-size:45px;
+        top:0;bottom:0;
+        box-sizing: border-box;
     }
 }
 
@@ -224,15 +255,14 @@ a{
 
 .selected ~.list-switch{
     padding:10px 13px;
-    right:0px;
+    right:-10px;
     transition:all 0.3s ease;
 
     @media (min-width: 768px) {
-        padding:11px 17px;
+        padding:0px 15px 0px 15px;
         right:-305px;left:auto;
         margin-left:50%;margin-right:50%;
-        box-sizing: border-box;
-        width:60px;
-        bottom:40vh;
+        top:0;
+        bottom:0;
     }
 }
