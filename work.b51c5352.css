@@ -206,7 +206,7 @@ body {
   height: 100vh;
   font-size: 1.6rem;
   position: relative;
-  overflow: auto;
+  overflow: hidden auto;
 }
 
 a {
