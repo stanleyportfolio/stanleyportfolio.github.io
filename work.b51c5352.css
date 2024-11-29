@@ -193,7 +193,7 @@ template, [hidden] {
 html {
   width: 100vw;
   height: 100vh;
-  font-family: sans-serif;
+  font-family: arial;
   font-size: 10px;
   position: relative;
   overflow: hidden;
@@ -437,7 +437,6 @@ a {
 }
 
 .list-switch {
-  z-index: 100;
   cursor: pointer;
   background: linear-gradient(45deg, #131313, #494949);
   border-radius: 15px;
@@ -465,10 +464,11 @@ a {
 @media (width >= 768px) {
   .list-switch {
     height: 55px;
+    margin: auto;
     padding-right: 40px;
-    font-size: 30px;
-    top: auto;
-    bottom: auto;
+    font-size: 45px;
+    top: 0;
+    bottom: 0;
     right: -60px;
   }
 }
