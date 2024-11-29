@@ -302,6 +302,7 @@ a {
 
 .item-wrapper.selected .item-image-wrapper {
   flex-grow: 1;
+  max-height: 40%;
   overflow: hidden;
 }
 
@@ -330,7 +331,7 @@ a {
   }
 
   .item-wrapper.selected .item-description h2 {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 
@@ -412,17 +413,64 @@ a {
 }
 
 .list-switch {
-  color: #bcf7ff;
   z-index: 100;
   cursor: pointer;
-  background: linear-gradient(45deg, #52299e, #5f4fe7);
+  background: linear-gradient(45deg, #131313, #494949);
   border-radius: 15px;
   width: auto;
-  padding: 10px;
+  padding: 10px 25px 10px 15px;
+  transition: all .3s;
   position: fixed;
-  bottom: 40%;
-  right: 0;
+  bottom: 35px;
+  right: -40px;
   transform: translate(-50%, -50%);
   box-shadow: 0 2px 5px #00000080;
+}
+
+.list-switch div {
+  transform-origin: center;
+  color: #d8d8d8;
+  transition: transform .3s;
+  transform: rotate(180deg);
+}
+
+@media (width >= 768px) {
+  .list-switch {
+    padding-right: 40px;
+    font-size: 30px;
+    bottom: 40vh;
+    right: -60px;
+  }
+}
+
+.backend-switch .list-switch {
+  transform-origin: center;
+  background: linear-gradient(45deg, #e9e9e9, #fff);
+  transition: all .3s;
+}
+
+.backend-switch .list-switch div {
+  color: #000;
+  transition: transform .3s;
+  transform: rotate(360deg);
+}
+
+.selected ~ .list-switch {
+  padding: 10px 13px;
+  transition: all .3s;
+  right: 0;
+}
+
+@media (width >= 768px) {
+  .selected ~ .list-switch {
+    box-sizing: border-box;
+    width: 60px;
+    margin-left: 50%;
+    margin-right: 50%;
+    padding: 11px 17px;
+    bottom: 40vh;
+    left: auto;
+    right: -305px;
+  }
 }
 /*# sourceMappingURL=work.b51c5352.css.map */
