@@ -234,6 +234,7 @@ a {
 @media (width >= 768px) {
   .descript-container {
     width: 70vw;
+    max-width: 800px;
     padding-top: 50px;
     font-size: 20px;
   }
@@ -465,13 +466,11 @@ a {
 
 @media (width >= 768px) {
   .list-switch {
-    height: 55px;
-    margin: auto;
-    padding-right: 40px;
+    box-sizing: border-box;
+    height: 60px;
+    padding: 0 40px 0 15px;
     font-size: 45px;
-    top: 0;
-    bottom: 0;
-    right: -60px;
+    inset: 0 -60px 0 auto;
   }
 }
 
@@ -495,14 +494,10 @@ a {
 
 @media (width >= 768px) {
   .selected ~ .list-switch {
-    box-sizing: border-box;
-    width: 60px;
     margin-left: 50%;
     margin-right: 50%;
-    padding: 11px 17px;
-    bottom: 40vh;
-    left: auto;
-    right: -305px;
+    padding: 0 15px;
+    inset: 0 -305px 0 auto;
   }
 }
 /*# sourceMappingURL=work.b51c5352.css.map */
