@@ -418,10 +418,14 @@ a {
   background: linear-gradient(45deg, #131313, #494949);
   border-radius: 15px;
   width: auto;
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
   padding: 10px 25px 10px 15px;
   transition: all .3s;
   position: fixed;
-  bottom: 35px;
+  top: 36vw;
+  bottom: 0;
   right: -40px;
   transform: translate(-50%, -50%);
   box-shadow: 0 2px 5px #00000080;
@@ -436,9 +440,11 @@ a {
 
 @media (width >= 768px) {
   .list-switch {
+    height: 55px;
     padding-right: 40px;
     font-size: 30px;
-    bottom: 40vh;
+    top: auto;
+    bottom: auto;
     right: -60px;
   }
 }
@@ -458,7 +464,7 @@ a {
 .selected ~ .list-switch {
   padding: 10px 13px;
   transition: all .3s;
-  right: 0;
+  right: -10px;
 }
 
 @media (width >= 768px) {
