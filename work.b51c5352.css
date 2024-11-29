@@ -209,6 +209,10 @@ body {
   overflow: hidden auto;
 }
 
+body.backend-switch {
+  background: radial-gradient(circle, #b4b4b4 20%, #fff 100%);
+}
+
 a {
   color: #00006e;
   border-bottom: 2px dashed #00006e80;
@@ -384,5 +388,41 @@ a {
   object-fit: cover;
   object-position: center center;
   width: 100%;
+}
+
+.item-backend {
+  height: 0;
+  transition: height .5s ease-in-out;
+  overflow: hidden;
+}
+
+.item-container:not(.item-backend) {
+  transition: height .5s ease-in-out;
+}
+
+.backend-switch .item-container:not(.item-backend) {
+  height: 0;
+  transition: height .5s ease-in-out;
+  overflow: hidden;
+}
+
+.backend-switch .item-backend {
+  height: 100%;
+  transition: height .5s ease-in-out;
+}
+
+.list-switch {
+  color: #bcf7ff;
+  z-index: 100;
+  cursor: pointer;
+  background: linear-gradient(45deg, #52299e, #5f4fe7);
+  border-radius: 15px;
+  width: auto;
+  padding: 10px;
+  position: fixed;
+  bottom: 40%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 5px #00000080;
 }
 /*# sourceMappingURL=work.b51c5352.css.map */
