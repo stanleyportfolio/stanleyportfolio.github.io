@@ -201,16 +201,18 @@ html {
 
 body {
   text-align: center;
-  background: radial-gradient(circle, #fff 20%, #b4b4b4 100%);
+  background-color: #eee;
   width: 100vw;
   height: 100vh;
   font-size: 1.6rem;
+  transition: background-color 1s;
   position: relative;
   overflow: hidden auto;
 }
 
 body.backend-switch {
-  background: radial-gradient(circle, #b4b4b4 20%, #fff 100%);
+  background-color: #555;
+  transition: background-color 1s;
 }
 
 a {
@@ -218,6 +220,11 @@ a {
   border-bottom: 2px dashed #00006e80;
   text-decoration: none;
   display: inline-block;
+}
+
+.backtosimple {
+  color: #00006e4d;
+  border-bottom: 2px dashed #00006e1a;
 }
 
 .descript-wrapper {
@@ -229,15 +236,21 @@ a {
 
 .descript-container {
   color: #555;
+  transition: color 2s;
 }
 
 @media (width >= 768px) {
   .descript-container {
     width: 70vw;
     max-width: 800px;
-    padding-top: 50px;
+    padding-top: 0;
     font-size: 20px;
   }
+}
+
+.backend-switch .descript-container {
+  color: #ccc;
+  transition: color 2s;
 }
 
 .list-wrapper {
