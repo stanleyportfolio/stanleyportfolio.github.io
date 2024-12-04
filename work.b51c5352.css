@@ -215,11 +215,22 @@ body.backend-switch {
   transition: background-color 1s;
 }
 
+body.backend-switch-2 {
+  background-color: #ffe7e0;
+  transition: background-color 1s;
+}
+
 a {
   color: #00006e;
   border-bottom: 2px dashed #00006e80;
   text-decoration: none;
   display: inline-block;
+}
+
+body.backend-switch a {
+  color: #2b2b61;
+  border-bottom: 2px dashed #00006e33;
+  transition: color 1s;
 }
 
 .backtosimple {
@@ -228,7 +239,9 @@ a {
 }
 
 .descript-wrapper {
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: auto;
   padding: 20px;
   display: flex;
@@ -246,6 +259,62 @@ a {
     padding-top: 0;
     font-size: 20px;
   }
+}
+
+.descript-switcher {
+  color: #000;
+  transition: color .1s;
+  display: flex;
+}
+
+.descript-switcher-container {
+  border: 2px solid #000;
+  border-radius: 15px;
+  flex-direction: row;
+  width: 120px;
+  margin-top: 15px;
+  transition: all .5s;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.descript-switcher-btn {
+  cursor: pointer;
+  width: 30px;
+  padding: 5px;
+}
+
+.descript-switcher-btn-select-overlay {
+  z-index: -1;
+  background-color: #888;
+  border-radius: 10px;
+  width: 40px;
+  height: 100%;
+  transition: all .3s ease-in;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.backend-switch .descript-switcher {
+  color: #ddd;
+  transition: all .1s;
+}
+
+.backend-switch .descript-switcher-container {
+  border-color: #ddd;
+  transition: all 1s;
+}
+
+.backend-switch .descript-switcher-btn-select-overlay {
+  background-color: #888;
+  transition: all .3s ease-in;
+  left: 40px;
+}
+
+.backend-switch-2 .descript-switcher-btn-select-overlay {
+  left: 80px;
 }
 
 .backend-switch .descript-container {
@@ -328,7 +397,7 @@ a {
 }
 
 .item-wrapper.selected .item-container {
-  background-color: #fee;
+  background-color: #eee;
   flex-direction: column;
   display: flex;
 }
@@ -451,31 +520,49 @@ a {
   transition: height .5s ease-in-out;
 }
 
+.backend-switch-2 .item-container:not(.item-ux) {
+  height: 0;
+  transition: height .5s ease-in-out;
+  overflow: hidden;
+}
+
+.backend-switch-2 .item-ux {
+  height: 100%;
+  transition: height .5s ease-in-out;
+}
+
 .list-switch {
   cursor: pointer;
   z-index: 9;
   background: linear-gradient(45deg, #131313, #494949);
   border-radius: 15px;
+  justify-content: center;
+  align-items: center;
   width: auto;
-  height: 20px;
+  height: 18px;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 7px 25px 10px 15px;
+  padding: 7px 25px 7px 15px;
   font-size: 18px;
+  font-weight: bold;
   transition: all .3s;
+  display: flex;
   position: fixed;
   top: 36vw;
   bottom: 0;
-  right: -40px;
+  right: -50px;
   transform: translate(-50%, -50%);
   box-shadow: 0 2px 5px #00000080;
 }
 
 .list-switch div {
-  transform-origin: center;
   color: #d8d8d8;
-  transition: transform .3s;
-  transform: rotate(180deg);
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  line-height: 1;
+  display: flex;
+  overflow: hidden;
 }
 
 @media (width >= 768px) {
@@ -484,20 +571,31 @@ a {
     height: 60px;
     padding: 0 40px 0 15px;
     font-size: 45px;
-    inset: 0 -60px 0 auto;
+    inset: 0 -80px 0 auto;
   }
 }
 
+.backend-noswitch .list-switch .list-switch-be {
+  width: 100%;
+}
+
 .backend-switch .list-switch {
-  transform-origin: center;
   background: linear-gradient(45deg, #e9e9e9, #fff);
   transition: all .3s;
 }
 
-.backend-switch .list-switch div {
+.backend-switch .list-switch .list-switch-ux {
   color: #000;
-  transition: transform .3s;
-  transform: rotate(360deg);
+  width: 100%;
+}
+
+.backend-switch-2 .list-switch {
+  background: linear-gradient(45deg, #ffb9b9, #ffefef);
+}
+
+.backend-switch-2 .list-switch .list-switch-fe {
+  color: #7a2525;
+  width: 100%;
 }
 
 .selected ~ .list-switch {
@@ -511,7 +609,7 @@ a {
     margin-left: 50%;
     margin-right: 50%;
     padding: 0 15px;
-    inset: 0 -305px 0 auto;
+    inset: 0 -315px 0 auto;
   }
 }
 /*# sourceMappingURL=work.b51c5352.css.map */
