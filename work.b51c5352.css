@@ -202,10 +202,13 @@ html {
 body {
   text-align: center;
   background-color: #eee;
+  flex-direction: column;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   font-size: 1.6rem;
   transition: background-color 1s;
+  display: flex;
   position: relative;
   overflow: hidden auto;
 }
@@ -227,15 +230,16 @@ a {
   display: inline-block;
 }
 
-body.backend-switch a {
-  color: #2b2b61;
-  border-bottom: 2px dashed #00006e33;
-  transition: color 1s;
+.backtosimple {
+  color: #000;
+  border-bottom: 2px dashed #0006;
 }
 
-.backtosimple {
-  color: #00006e4d;
-  border-bottom: 2px dashed #00006e1a;
+@media (width >= 768px) {
+  .backtosimple {
+    align-self: flex-start;
+    margin-left: 20px;
+  }
 }
 
 .descript-wrapper {
@@ -499,7 +503,7 @@ body.backend-switch a {
   width: 100%;
 }
 
-.item-backend {
+.item-backend, .item-ux {
   height: 0;
   transition: height .5s ease-in-out;
   overflow: hidden;
@@ -542,7 +546,7 @@ body.backend-switch a {
   height: 18px;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 7px 25px 7px 15px;
+  padding: 10px 25px 10px 15px;
   font-size: 18px;
   font-weight: bold;
   transition: all .3s;
@@ -550,7 +554,7 @@ body.backend-switch a {
   position: fixed;
   top: 36vw;
   bottom: 0;
-  right: -50px;
+  right: -45px;
   transform: translate(-50%, -50%);
   box-shadow: 0 2px 5px #00000080;
 }
@@ -601,7 +605,8 @@ body.backend-switch a {
 .selected ~ .list-switch {
   padding: 10px 13px;
   transition: all .3s;
-  right: -10px;
+  bottom: 10px;
+  right: 0;
 }
 
 @media (width >= 768px) {
