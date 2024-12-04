@@ -546,8 +546,8 @@ a {
   height: 18px;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 10px 25px 10px 15px;
-  font-size: 18px;
+  padding: 7px 20px 10px 10px;
+  font-size: 3rem;
   font-weight: bold;
   transition: all .3s;
   display: flex;
@@ -573,7 +573,7 @@ a {
   .list-switch {
     box-sizing: border-box;
     height: 60px;
-    padding: 0 40px 0 15px;
+    padding: 0 40px 5px 15px;
     font-size: 45px;
     inset: 0 -80px 0 auto;
   }
@@ -603,17 +603,17 @@ a {
 }
 
 .selected ~ .list-switch {
-  padding: 10px 13px;
+  padding: 10px 7px 12px;
   transition: all .3s;
-  bottom: 10px;
-  right: 0;
+  bottom: 0;
+  right: -5px;
 }
 
 @media (width >= 768px) {
   .selected ~ .list-switch {
     margin-left: 50%;
     margin-right: 50%;
-    padding: 0 15px;
+    padding: 0 15px 3px;
     inset: 0 -315px 0 auto;
   }
 }
