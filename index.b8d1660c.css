@@ -528,242 +528,242 @@ a {
 }
 
 .bokeh:first-child {
-  --size: 1.25vw;
-  --left-ini: 19vw;
-  --left-end: 102vw;
-  animation: 10s linear -4s infinite windblow;
-  left: 20vw;
-}
-
-.bokeh:nth-child(2) {
   --size: .5vw;
-  --left-ini: 11vw;
-  --left-end: 95vw;
-  animation: 13s linear -4s infinite windblow;
-  left: 2vw;
-}
-
-.bokeh:nth-child(3) {
-  --size: 1.25vw;
-  --left-ini: 15vw;
-  --left-end: 100vw;
-  animation: 13s linear -2s infinite windblow;
-  left: 22vw;
-}
-
-.bokeh:nth-child(4) {
-  --size: 1vw;
-  --left-ini: 18vw;
-  --left-end: 113vw;
-  animation: 8s linear -2s infinite windblow;
-  left: 14vw;
-}
-
-.bokeh:nth-child(5) {
-  --size: .5vw;
-  --left-ini: 12vw;
-  --left-end: 116vw;
-  animation: 15s linear -1s infinite windblow;
+  --left-ini: 23vw;
+  --left-end: 101vw;
+  animation: 11s linear -3s infinite windblow;
   left: 15vw;
 }
 
-.bokeh:nth-child(6) {
-  --size: 1vw;
+.bokeh:nth-child(2) {
+  --size: 1.25vw;
+  --left-ini: 16vw;
+  --left-end: 91vw;
+  animation: 7s linear -8s infinite windblow;
+  left: 3vw;
+}
+
+.bokeh:nth-child(3) {
+  --size: .75vw;
+  --left-ini: 21vw;
+  --left-end: 105vw;
+  animation: 14s linear -5s infinite windblow;
+  left: 26vw;
+}
+
+.bokeh:nth-child(4) {
+  --size: 1.25vw;
   --left-ini: 25vw;
-  --left-end: 115vw;
-  animation: 16s linear -1s infinite windblow;
-  left: 12vw;
+  --left-end: 118vw;
+  animation: 12s linear -8s infinite windblow;
+  left: 18vw;
+}
+
+.bokeh:nth-child(5) {
+  --size: 1.25vw;
+  --left-ini: 23vw;
+  --left-end: 102vw;
+  animation: 9s linear -9s infinite windblow;
+  left: 25vw;
+}
+
+.bokeh:nth-child(6) {
+  --size: .25vw;
+  --left-ini: 21vw;
+  --left-end: 91vw;
+  animation: 11s linear -9s infinite windblow;
+  left: 5vw;
 }
 
 .bokeh:nth-child(7) {
-  --size: .75vw;
-  --left-ini: 28vw;
-  --left-end: 106vw;
-  animation: 14s linear -7s infinite windblow;
-  left: 6vw;
+  --size: 1vw;
+  --left-ini: 16vw;
+  --left-end: 101vw;
+  animation: 10s linear -10s infinite windblow;
+  left: 3vw;
 }
 
 .bokeh:nth-child(8) {
-  --size: 1vw;
-  --left-ini: 20vw;
+  --size: .5vw;
+  --left-ini: 27vw;
   --left-end: 110vw;
-  animation: 8s linear -4s infinite windblow;
-  left: 8vw;
+  animation: 16s linear -3s infinite windblow;
+  left: 21vw;
 }
 
 .bokeh:nth-child(9) {
   --size: .25vw;
-  --left-ini: 19vw;
-  --left-end: 93vw;
-  animation: 15s linear -9s infinite windblow;
-  left: 18vw;
+  --left-ini: 27vw;
+  --left-end: 119vw;
+  animation: 8s linear -10s infinite windblow;
+  left: 29vw;
 }
 
 .bokeh:nth-child(10) {
-  --size: 1.25vw;
-  --left-ini: 25vw;
-  --left-end: 95vw;
-  animation: 11s linear -3s infinite windblow;
-  left: 24vw;
-}
-
-.bokeh:nth-child(11) {
-  --size: 1vw;
-  --left-ini: 21vw;
-  --left-end: 95vw;
-  animation: 10s linear -6s infinite windblow;
-  left: 11vw;
-}
-
-.bokeh:nth-child(12) {
-  --size: 1vw;
-  --left-ini: 13vw;
-  --left-end: 118vw;
-  animation: 11s linear -10s infinite windblow;
-  left: 24vw;
-}
-
-.bokeh:nth-child(13) {
-  --size: 1vw;
-  --left-ini: 27vw;
-  --left-end: 94vw;
-  animation: 15s linear -6s infinite windblow;
-  left: 29vw;
-}
-
-.bokeh:nth-child(14) {
-  --size: 1.25vw;
-  --left-ini: 28vw;
-  --left-end: 104vw;
-  animation: 14s linear -7s infinite windblow;
+  --size: .25vw;
+  --left-ini: 16vw;
+  --left-end: 106vw;
+  animation: 9s linear -8s infinite windblow;
   left: 30vw;
 }
 
-.bokeh:nth-child(15) {
+.bokeh:nth-child(11) {
+  --size: 1.25vw;
+  --left-ini: 11vw;
+  --left-end: 114vw;
+  animation: 16s linear -3s infinite windblow;
+  left: 1vw;
+}
+
+.bokeh:nth-child(12) {
+  --size: 1.25vw;
+  --left-ini: 19vw;
+  --left-end: 101vw;
+  animation: 16s linear -6s infinite windblow;
+  left: 2vw;
+}
+
+.bokeh:nth-child(13) {
   --size: .5vw;
+  --left-ini: 15vw;
+  --left-end: 115vw;
+  animation: 14s linear -3s infinite windblow;
+  left: 10vw;
+}
+
+.bokeh:nth-child(14) {
+  --size: .25vw;
+  --left-ini: 23vw;
+  --left-end: 112vw;
+  animation: 8s linear -8s infinite windblow;
+  left: 12vw;
+}
+
+.bokeh:nth-child(15) {
+  --size: .75vw;
   --left-ini: 28vw;
-  --left-end: 117vw;
-  animation: 10s linear -5s infinite windblow;
-  left: 19vw;
+  --left-end: 91vw;
+  animation: 10s linear -10s infinite windblow;
+  left: 29vw;
 }
 
 .bokeh:nth-child(16) {
-  --size: .5vw;
-  --left-ini: 20vw;
-  --left-end: 106vw;
-  animation: 13s linear -9s infinite windblow;
-  left: 14vw;
+  --size: .25vw;
+  --left-ini: 17vw;
+  --left-end: 103vw;
+  animation: 15s linear -3s infinite windblow;
+  left: 1vw;
 }
 
 .bokeh:nth-child(17) {
-  --size: 1vw;
-  --left-ini: 21vw;
-  --left-end: 98vw;
-  animation: 8s linear -5s infinite windblow;
-  left: 24vw;
+  --size: .75vw;
+  --left-ini: 20vw;
+  --left-end: 92vw;
+  animation: 14s linear -3s infinite windblow;
+  left: 22vw;
 }
 
 .bokeh:nth-child(18) {
-  --size: .75vw;
-  --left-ini: 22vw;
-  --left-end: 110vw;
-  animation: 11s linear -7s infinite windblow;
-  left: 13vw;
-}
-
-.bokeh:nth-child(19) {
-  --size: 1vw;
-  --left-ini: 11vw;
-  --left-end: 104vw;
-  animation: 12s linear -3s infinite windblow;
-  left: 18vw;
-}
-
-.bokeh:nth-child(20) {
-  --size: .5vw;
-  --left-ini: 27vw;
-  --left-end: 106vw;
-  animation: 8s linear -5s infinite windblow;
+  --size: 1.25vw;
+  --left-ini: 20vw;
+  --left-end: 100vw;
+  animation: 11s linear -5s infinite windblow;
   left: 5vw;
 }
 
+.bokeh:nth-child(19) {
+  --size: .75vw;
+  --left-ini: 22vw;
+  --left-end: 112vw;
+  animation: 14s linear -2s infinite windblow;
+  left: 27vw;
+}
+
+.bokeh:nth-child(20) {
+  --size: 1.25vw;
+  --left-ini: 12vw;
+  --left-end: 98vw;
+  animation: 16s linear -4s infinite windblow;
+  left: 22vw;
+}
+
 .bokeh:nth-child(21) {
-  --size: 1vw;
-  --left-ini: 28vw;
-  --left-end: 105vw;
-  animation: 15s linear -7s infinite windblow;
-  left: 6vw;
+  --size: 1.25vw;
+  --left-ini: 12vw;
+  --left-end: 108vw;
+  animation: 10s linear -9s infinite windblow;
+  left: 16vw;
 }
 
 .bokeh:nth-child(22) {
-  --size: .5vw;
-  --left-ini: 16vw;
-  --left-end: 91vw;
-  animation: 7s linear -10s infinite windblow;
-  left: 29vw;
+  --size: 1.25vw;
+  --left-ini: 27vw;
+  --left-end: 120vw;
+  animation: 7s linear -5s infinite windblow;
+  left: 14vw;
 }
 
 .bokeh:nth-child(23) {
   --size: 1vw;
-  --left-ini: 23vw;
-  --left-end: 98vw;
-  animation: 16s linear -8s infinite windblow;
-  left: 21vw;
+  --left-ini: 18vw;
+  --left-end: 103vw;
+  animation: 8s linear -10s infinite windblow;
+  left: 5vw;
 }
 
 .bokeh:nth-child(24) {
-  --size: 1.25vw;
-  --left-ini: 30vw;
-  --left-end: 104vw;
-  animation: 11s linear -4s infinite windblow;
-  left: 3vw;
+  --size: .5vw;
+  --left-ini: 21vw;
+  --left-end: 97vw;
+  animation: 16s linear -10s infinite windblow;
+  left: 18vw;
 }
 
 .bokeh:nth-child(25) {
-  --size: .5vw;
-  --left-ini: 22vw;
-  --left-end: 91vw;
-  animation: 8s linear -3s infinite windblow;
-  left: 24vw;
+  --size: 1vw;
+  --left-ini: 20vw;
+  --left-end: 107vw;
+  animation: 8s linear -5s infinite windblow;
+  left: 30vw;
 }
 
 .bokeh:nth-child(26) {
-  --size: 1vw;
-  --left-ini: 15vw;
-  --left-end: 110vw;
-  animation: 15s linear -7s infinite windblow;
-  left: 13vw;
+  --size: .5vw;
+  --left-ini: 28vw;
+  --left-end: 101vw;
+  animation: 8s linear -1s infinite windblow;
+  left: 5vw;
 }
 
 .bokeh:nth-child(27) {
-  --size: 1vw;
-  --left-ini: 21vw;
-  --left-end: 98vw;
-  animation: 16s linear -5s infinite windblow;
-  left: 28vw;
+  --size: 1.25vw;
+  --left-ini: 17vw;
+  --left-end: 108vw;
+  animation: 12s linear -1s infinite windblow;
+  left: 15vw;
 }
 
 .bokeh:nth-child(28) {
-  --size: .75vw;
+  --size: 1.25vw;
   --left-ini: 25vw;
-  --left-end: 101vw;
-  animation: 12s linear -4s infinite windblow;
-  left: 8vw;
+  --left-end: 102vw;
+  animation: 13s linear -5s infinite windblow;
+  left: 3vw;
 }
 
 .bokeh:nth-child(29) {
-  --size: .5vw;
-  --left-ini: 19vw;
-  --left-end: 104vw;
-  animation: 10s linear -4s infinite windblow;
-  left: 7vw;
+  --size: 1.25vw;
+  --left-ini: 12vw;
+  --left-end: 94vw;
+  animation: 14s linear -5s infinite windblow;
+  left: 4vw;
 }
 
 .bokeh:nth-child(30) {
-  --size: 1.25vw;
-  --left-ini: 20vw;
-  --left-end: 110vw;
-  animation: 8s linear -3s infinite windblow;
+  --size: .25vw;
+  --left-ini: 13vw;
+  --left-end: 101vw;
+  animation: 12s linear -6s infinite windblow;
   left: 26vw;
 }
 
