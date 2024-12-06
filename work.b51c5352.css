@@ -546,9 +546,8 @@ a {
   height: 18px;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 7px 20px 10px 10px;
+  padding: 11px 22px 13px 12px;
   font-size: 3rem;
-  font-weight: bold;
   transition: all .3s;
   display: flex;
   position: fixed;
@@ -573,7 +572,7 @@ a {
   .list-switch {
     box-sizing: border-box;
     height: 60px;
-    padding: 0 40px 5px 15px;
+    padding: 5px 40px 7px 15px;
     font-size: 45px;
     inset: 0 -80px 0 auto;
   }
@@ -613,7 +612,7 @@ a {
   .selected ~ .list-switch {
     margin-left: 50%;
     margin-right: 50%;
-    padding: 0 15px 3px;
+    padding: 0 15px 3px 17px;
     inset: 0 -315px 0 auto;
   }
 }
