@@ -566,6 +566,7 @@ a {
   line-height: 1;
   display: flex;
   overflow: hidden;
+  transform: rotate(90deg);
 }
 
 @media (width >= 768px) {
